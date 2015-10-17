@@ -3,9 +3,9 @@ package controllers
 
 import (
         _ "github.com/go-sql-driver/mysql"
-        "github.com/jinzhu/gorm"
+        _ "github.com/jinzhu/gorm"
         "github.com/revel/revel"
-        "github.com/shopetan/millionApp/app/models"
+        _ "github.com/shopetan/millionApp/app/models"
         "log"
 )
 
