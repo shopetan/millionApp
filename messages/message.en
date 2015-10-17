@@ -1,0 +1,2 @@
+say = hello %s!
+hello.index.title = Revel framework Hello World
