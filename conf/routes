@@ -17,3 +17,4 @@ GET     /public/*filepath                       Static.Serve("public")
 
 GET     /getorder                               Getorder.Index
 GET     /greet/:greeting                        Getorder.Greet
+GET     /greet/:itemID                         Getorder.Show

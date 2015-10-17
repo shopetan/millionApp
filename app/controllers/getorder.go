@@ -18,3 +18,14 @@ func (c Getorder) Greet(greeting string) revel.Result {
   c.RenderArgs["message"] = message
   return c.RenderTemplate("Hello/Index.html")
 }
+
+func (c Getorder) show(itemID string) revel.Result {
+   order := &models.Item{}
+
+   if err := controllers.DB.First(&item, itemID).Error; err != nil {
+   	return c.HandleNotFoundError(err.Error())
+   }
+
+   r := Response{order}
+   return c.RenderJson(r)
+}
