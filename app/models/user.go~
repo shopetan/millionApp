@@ -1,0 +1,13 @@
+package models
+
+import (
+  "fmt"
+  "time"
+)
+
+type User struct {
+  userID           string    `json:"userID"`
+  userCompany      string    `json:"userCompany"`
+  userDiscountRate int    `json:"userDiscountRate"`
+  GuestStaringRole string    `json:"guest_staring_role"`
+}

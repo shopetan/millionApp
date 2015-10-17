@@ -1,0 +1,20 @@
+package models
+
+import (
+  "fmt"
+  "time"
+_ "github.com/go-sql-driver/mysql" // 新規追加
+  "github.com/jinzhu/gorm" // 新規追加
+  "strings" // 新規追加
+  "fmt" // 新規追加
+)
+
+type Item struct {
+  orderID           string    `json:"userID"`
+  orderDataTime      string    `json:"userCompany"`
+  orderUserID int32    `json:"userDiscountRate"`
+  orderItemID string    `json:"guest_staring_role"`
+  orderQuantity string    `json:"guest_staring_role"`
+  orderState string    `json:"guest_staring_role"`
+  orderTags string    `json:"guest_staring_role"`
+}
